@@ -28,7 +28,10 @@ const quotes = [
 ];
 function randQuotes() {
     const randQuote = Math.floor(Math.random() * quotes.length);
-    document.getElementById("quote").innerHTML = quotes[randQuote];
+    document.getElementById("quote").innerHTML =
+        quotes[randQuote];
 }
 setInterval(randQuotes, 10000);
-document.getElementById("btn").addEventListener("click", randQuotes);
+document
+    .getElementById("btn")
+    .addEventListener("click", randQuotes);
